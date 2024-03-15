@@ -18,12 +18,12 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="/" class="navbar-brand">Детская школа анимации</a>
+                <a href="/" class="navbar-brand">Р”РµС‚СЃРєР°СЏ С€РєРѕР»Р° Р°РЅРёРјР°С†РёРё</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="/about">Услуги</a></li>
-                    <li><a href="/contact">Контакты</a></li>
+                    <li><a href="/about">РЈСЃР»СѓРіРё</a></li>
+                    <li><a href="/contact">РљРѕРЅС‚Р°РєС‚С‹</a></li>
                 </ul>
             </div>
         </div>
