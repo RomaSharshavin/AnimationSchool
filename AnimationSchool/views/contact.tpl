@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Контакты</title>
+    <title>РљРѕРЅС‚Р°РєС‚С‹</title>
     <style>
         body {
             background-image: url('static/images/fon.jpg');
@@ -24,7 +24,7 @@
         .content {
             display: flex;
             align-items: center;
-            max-width: 1000px; /* Увеличиваем максимальную ширину контейнера */
+            max-width: 1000px; /* вЂќРІРµР»РёС‡РёРІР°РµРј РјР°РєСЃРёРјР°Р»СЊРЅСѓСЋ С€РёСЂРёРЅСѓ РєРѕРЅС‚РµР№РЅРµСЂР° */
             margin: 0 auto;
             padding: 20px;
             background: rgba(255, 255, 255, 0.8);
@@ -51,7 +51,7 @@
         .text-info h2 {
             color: #333;
             font-size: 2em;
-            font-weight: bold; /* Жирный шрифт для заголовка */
+            font-weight: bold; /* Р–РёСЂРЅС‹Р№ С€СЂРёС„С‚ РґР»В¤ Р·Р°РіРѕР»РѕРІРєР° */
         }
         .text-info p {
             color: #666;
@@ -59,12 +59,12 @@
             margin-top: 10px;
         }
         .text-info p:last-child {
-            color: black; /* Черный цвет для последнего параграфа */
+            color: black; /* Р§РµСЂРЅС‹Р№ С†РІРµС‚ РґР»В¤ РїРѕСЃР»РµРґРЅРµРіРѕ РїР°СЂР°РіСЂР°С„Р° */
         }
         .map-container {
             flex: 1;
-            height: 500px; /* Увеличиваем высоту контейнера с картой */
-            width: 600px; /* Увеличиваем ширину контейнера с картой */
+            height: 500px; /* вЂќРІРµР»РёС‡РёРІР°РµРј РІС‹СЃРѕС‚Сѓ РєРѕРЅС‚РµР№РЅРµСЂР° СЃ РєР°СЂС‚РѕР№ */
+            width: 600px; /* вЂќРІРµР»РёС‡РёРІР°РµРј С€РёСЂРёРЅСѓ РєРѕРЅС‚РµР№РЅРµСЂР° СЃ РєР°СЂС‚РѕР№ */
             border: 1px solid #ccc;
             margin-left: 20px;
             border-radius: 10px;
@@ -80,11 +80,11 @@
 <body>
     <div class="content">
         <div class="text-info">
-            <h2>КОНТАКТЫ</h2>
+            <h2>РљРћРќРўРђРљРўР«</h2>
             <p>+7 (911) 123-45-67</p>
             <p><a href="mailto:animationschool@yandex.ru">animationschool@yandex.ru</a></p>
-            <p>Санкт-Петербург, Лиговский пр., 56Г, офис 502</p>
-            <p>Звоните, пишите или приезжайте, мы всегда рады новым знакомствам!</p>
+            <p>РЎР°РЅРєС‚-РџРµС‚РµСЂР±СѓСЂРі, Р›РёРіРѕРІСЃРєРёР№ РїСЂ., 56Рђ, РѕС„РёСЃ 502</p>
+            <p>Р—РІРѕРЅРёС‚Рµ, РїРёС€РёС‚Рµ РёР»Рё РїСЂРёРµР·Р¶Р°Р№С‚Рµ, РјС‹ РІСЃРµРіРґР° СЂР°РґС‹ РЅРѕРІС‹Рј Р·РЅР°РєРѕРјСЃС‚РІР°Рј!</p>
         </div>
         <div class="map-container">
             <iframe src="https://maps.google.com/maps?q=59.923861,30.360167&z=15&output=embed"
