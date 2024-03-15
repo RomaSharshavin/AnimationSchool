@@ -1,10 +1,11 @@
 % rebase('layout.tpl', title='Home Page', year=year)
 
-<div class="jumbotron">
-    <h1>Bottle</h1>
-    <p class="lead">Bottle is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://bottlepy.org/docs/dev/index.html" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+<div class="jumbotron text-center">
+    <h1 class="animate__animated animate__fadeIn">Детская школа анимации</h1>
+    <p class="lead animate__animated animate__fadeIn">Добро пожаловать на сайт детской школы анимации. Здесь вы найдете всю необходимую информацию о нашей школе и курсах.</p>
+    <p><a href="http://bottlepy.org/docs/dev/index.html" class="btn btn-primary btn-large animate__animated animate__fadeIn">Узнать больше &raquo;</a></p>
 </div>
+
 
 <div class="row">
     <div class="col-md-4">
