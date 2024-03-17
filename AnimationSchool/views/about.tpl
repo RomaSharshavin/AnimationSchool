@@ -1,10 +1,8 @@
-% rebase('layout.tpl', title=title, year=year)
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="ru">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Услуги</title>
     <style>
@@ -38,11 +36,38 @@
           position: fixed; /* Фиксированное позиционирование */
           top: 0; /* Расположение в верхней части */
           transform: translateX(-50%); /* Центрирование по горизонтали */
+          color: black;
         }
 
     </style>
 </head>
-    <div class="slide-in-from-top">
-      Услуги Школы
-    </div>
+
+<body>
+    % rebase('layout.tpl', title=title, year=year)
+    <div class="scroll">
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="/" class="navbar-brand">Application name</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/home">Home</a></li>
+                        <li><a href="/about">Услуги</a></li>
+                        <li><a href="/contact">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide-in-from-top">
+          <h1>Услуги Школы</h1>
+        </div>>
+    </div>>
+</body>
 </html>
