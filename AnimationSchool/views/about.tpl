@@ -83,6 +83,16 @@
             font-size: 14px;
             text-align: center;
         }
+
+        /* Новые стили для выделенного контейнера */
+        .text-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
     </style>
 </head>
 
@@ -98,11 +108,10 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a href="/" class="navbar-brand">Application name</a>
+                        <a href="/" class="navbar-brand">Детская школа анимации</a>
                     </div>
                     <div class="navbar-collapse collapse">
                         <ul class="nav navbar-nav">
-                            <li><a href="/home">Домашняя</a></li>
                             <li><a href="/about">Услуги</a></li>
                             <li><a href="/contact">Контакты</a></li>
                         </ul>
