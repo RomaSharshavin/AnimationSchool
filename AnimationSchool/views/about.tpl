@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="Content-Language" content="ru">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Услуги</title>
+    <title>РЈСЃР»СѓРіРё</title>
     <style>
         body {
             background-image: url('static/images/fon.jpg');
@@ -31,19 +31,19 @@
         }
 
         .slide-in-from-top {
-          animation: slideInFromTop 1s ease-in-out;
-          font-size: 45px; /* Размер шрифта */
-          position: fixed; /* Фиксированное позиционирование */
-          top: 0; /* Расположение в верхней части */
-          transform: translateX(-50%); /* Центрирование по горизонтали */
-          color: black;
+        animation: slideInFromTop 1s ease-in-out;
+        font-size: 45px;
+        position: absolute;
+        top: 10%;
+        left: 43%;
+        color: black;
         }
+
 
     </style>
 </head>
 
 <body>
-    % rebase('layout.tpl', title=title, year=year)
     <div class="scroll">
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
@@ -58,16 +58,26 @@
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li><a href="/home">Home</a></li>
-                        <li><a href="/about">Услуги</a></li>
-                        <li><a href="/contact">Контакты</a></li>
-                    </ul>
+                        <li><a href="/about">РЈСЃР»СѓРіРё</a></li>
+                        <li><a href="/contact">РљРѕРЅС‚Р°РєС‚С‹</a></li>
+                    </ul>   
                 </div>
             </div>
         </div>
 
         <div class="slide-in-from-top">
-          <h1>Услуги Школы</h1>
+          <h1> РЈСЃР»СѓРіРё РЁРєРѕР»С‹ </h1>
         </div>>
+
+        <div>
+            <p>
+                <b>Р”РµС‚СЃРєР°СЏ С€РєРѕР»Р° Р°РЅРёРјР°С†РёРё</b> РїСЂРµРґРѕСЃС‚Р°РІР»СЏРµС‚ РІР°Рј РјРѕС‰РЅС‹Р№ РёРЅСЃС‚СЂСѓРјРµРЅС‚ РґР»СЏ СЃРѕР·РґР°РЅРёСЏ РґРёРЅР°РјРёС‡РµСЃРєРёС… РІРµР±-СЃР°Р№С‚РѕРІ,
+            РѕР±РµСЃРїРµС‡РёРІР°СЏ С‡РёСЃС‚РѕРµ СЂР°Р·РґРµР»РµРЅРёРµ РѕС‚РІРµС‚СЃС‚РІРµРЅРЅРѕСЃС‚РµР№ Рё РїРѕР»РЅС‹Р№ РєРѕРЅС‚СЂРѕР»СЊ РЅР°Рґ СЂР°Р·РјРµС‚РєРѕР№ РґР»СЏ РїСЂРёСЏС‚РЅРѕР№ Рё РіРёР±РєРѕР№ СЂР°Р·СЂР°Р±РѕС‚РєРё.
+            </p>
+        </div>
+
     </div>>
+
+    % rebase('layout.tpl', title=title, year=year)
 </body>
 </html>
