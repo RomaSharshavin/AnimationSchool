@@ -19,37 +19,44 @@
             align-items: center;
             height: 100vh;
         }
-        @keyframes slideInFromTop {
-          0% {
-            transform: translateY(-100%);
-            opacity: 0;
-          }
-          100% {
-            transform: translateY(0);
-            opacity: 1;
-          }
-        }
 
-        .scroll {
-            overflow-y: auto; /* Добавляет вертикальную прокрутку */
-            height: 100vh; /* Задает фиксированную высоту контейнера */
-            flex-grow: 1;
+        .service-container {
+            /* Измененные стили */
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: space-start;
         }
 
         .service {
             background-color: #fff;
             border-radius: 5px;
-            margin: 30px;
-            padding: 20px;
+            margin: 20px;
+            padding: 50px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             display: flex;
             align-items: center;
-            max-width: 600px;
+            width: 1000px; /* Изменение ширины контейнера услуги для двух столбцов */
+            height: 160px;
+        }
+
+        .first-service {
+            margin-top: 250px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 10px;
+        }
+
+        .service:not(:first-child) {
+            margin-top: 20px;
         }
 
         .service-image {
             width: 100%;
-            max-width: 200px;
+            max-width: 80px;
             height: auto;
             margin-right: 10px;
         }
@@ -75,14 +82,6 @@
         .service-description {
             font-size: 14px;
             text-align: center;
-        }
-
-        .first-service {
-            margin-top: 150px;
-        }
-
-        .service:not(:first-child) {
-            margin-top: 30px;
         }
     </style>
 </head>
@@ -111,36 +110,64 @@
                 </div>
             </div>
         </div>
-
-        <div class="slide-in-from-top">
-            <div class="service first-service" style="max-width: 400px;">
-                <img src="static/images/service1.jpg" alt="Услуга 1" class="service-image">
+        
+        <div class="service-container first-service">
+            <div class="service">
                 <div class="service-content">
-                    <h3 class="service-title">Название услуги 1</h3>
-                    <p class="service-price">Цена: $50</p>
-                    <p class="service-description">Описание услуги 1.</p>
+                    <div class="grid-container">
+                        <img src="static/images/services/serv1.png" alt="Услуга 1" class="service-image">
+                        <h3 class="service-title">Анимация в After Effects</h3>
+                        <p class="service-price">Цена: 16000 руб</p>
+                        <p class="service-description">Образовательный курс по одной из самых известных анимационных программ 
+                        состоит из 8 видеоуроков и 8 вебинаров. На курсе вы узнаете, как из сценария сделать раскадровку, 
+                        а из раскадровки аниматик, и как делать анимацию и компоузинг в программе After Effects.</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="service" style="max-width: 400px;">
-                <img src="static/images/service2.jpg" alt="Услуга 2" class="service-image">
+            <div class="service">
                 <div class="service-content">
-                    <h3 class="service-title">Название услуги 2</h3>
-                    <p class="service-price">Цена: $75</p>
-                    <p class="service-description">Описание услуги 2.</p>
+                    <div class="grid-container">
+                        <img src="static/images/services/serv2.png" alt="Услуга 2" class="service-image">
+                        <h3 class="service-title">Кукольная анимация</h3>
+                        <p class="service-price">Цена: 10000 руб</p>
+                        <p class="service-description">Занятия проводятся в студии кукольной анимации. 
+                        За 1 год обучения слушатели курса получат профессию художника-мультипликатора, освоят технологию работы 
+                        с куклой от разработки персонажа до съемки мультфильма, снимут свой персональный проект и получат 
+                        диплом о профессиональной переподготовке.</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="service" style="max-width: 400px;">
-                <img src="static/images/service3.jpg" alt="Услуга 3" class="service-image">
+            <div class="service">
                 <div class="service-content">
-                    <h3 class="service-title">Название услуги 3</h3>
-                    <p class="service-price">Цена: $100</p>
-                    <p class="service-description">Описание услуги 3.</p>
+                    <div class="grid-container">
+                        <img src="static/images/services/serv3.png" alt="Услуга 3" class="service-image">
+                        <h3 class="service-title">Основы анимации. Procreate</h3>
+                        <p class="service-price">Цена: 16000 руб</p>
+                        <p class="service-description">На курсе вы узнаете основные 12 принципов создания анимации, 
+                        познакомитесь с техниками рисованной анимацией, stop-motion и ротоскоп, основам для разработки персонажа 
+                        и художественного решения мультфильма, освоите интерфейс программы Procreate и получите начальные 
+                        навыки работы со звуком и монтажом.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service">
+                <div class="service-content">
+                    <div class="grid-container">
+                        <img src="static/images/services/serv4.png" alt="Услуга 4" class="service-image">
+                        <h3 class="service-title">Живопись. Шедевры мастеров.</h3>
+                        <p class="service-price">Цена: 42000 руб</p>
+                        <p class="service-description">Наш курс по живописи «Шедевры старых мастеров» предлагает уникальную 
+                        возможность погрузиться в мир натюрморта и изучить техники создания копий живописи старых 
+                        мастеров. Получите профессиональное обучение под руководством опытных художников, 
+                        разберитесь в секретах композиции, светотени и цвета. Освоив этот курс, 
+                        вы сможете создавать удивительные картины, которые будут радовать вас и ваших близких.</p>
+                    </div>
                 </div>
             </div>
         </div>
-
     </div>
 </body>
 </html>
