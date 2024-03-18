@@ -39,11 +39,57 @@
         color: black;
         }
 
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 80%;
+            max-width: 1200px;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .image {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .image img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .content {
+            flex: 2;
+        }
+
+        .content h2 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .content p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
 
     </style>
 </head>
 
 <body>
+    % rebase('layout.tpl', title=title, year=year)
     <div class="scroll">
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
@@ -66,18 +112,20 @@
         </div>
 
         <div class="slide-in-from-top">
-          <h1> Услуги Школы </h1>
+          <h2> Услуги Школы </h2>
         </div>>
-
-        <div>
-            <p>
-                <b>Детская школа анимации</b> предоставляет вам мощный инструмент для создания динамических веб-сайтов,
-            обеспечивая чистое разделение ответственностей и полный контроль над разметкой для приятной и гибкой разработки.
-            </p>
-        </div>
 
     </div>>
 
-    % rebase('layout.tpl', title=title, year=year)
+    <div class="container">
+        <div class="image">
+            <img src="path/to/image.jpg" alt="Изображение услуги">
+        </div>
+        <div class="content">
+            <h2>Название услуги</h2>
+            <p>Описание услуги здесь. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="button">Заказать</a>
+        </div>
+    </div>
 </body>
 </html>
