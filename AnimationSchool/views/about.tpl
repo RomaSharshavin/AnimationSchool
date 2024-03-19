@@ -20,15 +20,22 @@
             height: 100vh;
         }
 
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000; /* Чтобы шапка была выше других элементов */
+        }
+
         .service-container {
             display: flex;
             flex-wrap: wrap;
             width: 90%;
-            justify-content: space-around; /* Равномерно распределяем контейнеры по ширине */
+            justify-content: space-around;
             align-items: center;
-            margin-top: 50px;
+            margin-top: 120px; /* Увеличиваем отступ сверху для контейнеров с услугами */
             padding: 10px;
-            margin: 0 auto; /* Центрируем контейнеры по горизонтали */
+            margin: 0 auto;
         }
 
         .service {
@@ -41,10 +48,6 @@
             margin: 0 10px; /* Отступ между контейнерами */
             flex-basis: calc(50% - 20px); /* Устанавливаем базовый размер для контейнера */
             flex-grow: 1; /* Разрешаем контейнеру увеличиваться в размере */
-        }
-
-        .first-service {
-            margin-top: 250px;
         }
 
         .grid-container {
@@ -132,7 +135,7 @@
             </div>
         </div>
         
-        <div class="service-container first-service">
+        <div class="service-container">
             <div class="service">
                 <div class="service-content">
                     <div class="grid-container">
@@ -152,8 +155,8 @@
                         <img src="static/images/services/serv2.png" alt="Услуга 2" class="service-image">
                         <h3 class="service-title">Кукольная анимация</h3>
                         <p class="service-price">Цена: 10000 руб</p>
-                        <p class="service-description">Слушатели курса получат профессию художника-мультипликатора, освоят технологию работы 
-                        с куклой от разработки персонажа до съемки мультфильма.</p>
+                        <p class="service-description">На данном курсе Вы освоите старейшую анимационную технику, с которой началась история кинематографа, а конкретно
+                        работа с куклой, от разработки персонажа до съемки мультфильма.</p>
                         <p><a href="https://biganimationschool.ru/puppetoffline" target="_blank">Подробнее</a></p>
                     </div>
                 </div>
