@@ -7,6 +7,7 @@
     <title>Услуги</title>
     <style>
         body {
+            /* Стиль для фона */
             background-image: url('static/images/fon.jpg');
             background-color: #f0f0f0;
             font-family: Arial, sans-serif;
@@ -19,7 +20,7 @@
             align-items: center;
             height: 100vh;
         }
-
+        /*Стиль для шапки*/
         .navbar {
             position: fixed;
             top: 0;
@@ -27,6 +28,7 @@
             z-index: 1000; /* Чтобы шапка была выше других элементов */
         }
 
+        /*Стиль для контейнеров с услугами*/
         .service-container {
             display: flex;
             flex-wrap: wrap;
@@ -38,6 +40,7 @@
             margin: 0 auto;
         }
 
+        /* Стили для каждой отдельной услуги */
         .service {
             background-color: #fff;
             border-radius: 5px;
@@ -50,16 +53,14 @@
             flex-grow: 1; /* Разрешаем контейнеру увеличиваться в размере */
         }
 
+        /* Стили для внутреннего контейнера с содержимым услуги */
         .grid-container {
             display: grid;
             grid-template-columns: 1fr;
             grid-gap: 10px;
         }
 
-        .service:not(:first-child) {
-            margin-top: 20px;
-        }
-
+        /* Стили для изображения услуги */
         .service-image {
             width: 100%;
             max-width: 80px;
@@ -67,18 +68,21 @@
             margin-right: 10px;
         }
 
+        /* Стили для блока с содержимым услуги */
         .service-content {
             flex-grow: 1;
             display: flex;
             flex-direction: column;
         }
 
+        /* Стили для заголовка услуги */
         .service-title {
             font-family Arial, sans-serif;
             font-size: 16px;
             font-weight: bold;
         }
 
+        /* Стили для цены услуги */
         .service-price {
             font-size: 16px;
             margin-bottom: 5px;
@@ -86,27 +90,26 @@
             text-decoration: underline;
         }
 
+         /* Стили для описания услуги */
         .service-description {
             font-size: 14px;
             text-align: center;
         }
 
-        /* Новые стили для выделенного контейнера */
-        .text-container {
-            max-width: 800px; /* Ширина контейнера текста */
-            margin: 10px; /* Внешний отступ контейнера */
-            padding: 20px; /* Внутренний отступ контейнера */
-            background-color: rgba(255, 255, 255, 0.9);
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-        }
+        /* Добавляем отступ между блоками услуг */
         .service {
-            margin-bottom: 20px; /* Добавляем отступ между блоками услуг */
+            margin-bottom: 20px; 
         }
 
+        /* Добавляем скрытие избыточного содержимого */
         .service-content {
-            overflow: hidden; /* Добавляем скрытие избыточного содержимого */
+            overflow: hidden; 
+        }
+
+        /* Добавляем отступ сверху только для первых двух услуг */
+        .service:nth-child(1),
+        .service:nth-child(2) {
+            margin-top: 200px; 
         }
     </style>
 </head>
