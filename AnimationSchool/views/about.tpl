@@ -20,28 +20,34 @@
             height: 100vh;
         }
 
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000; /* Чтобы шапка была выше других элементов */
+        }
+
         .service-container {
-            /* Измененные стили */
             display: flex;
             flex-wrap: wrap;
-            width: 100%;
-            justify-content: space-start;
+            width: 90%;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 120px; /* Увеличиваем отступ сверху для контейнеров с услугами */
+            padding: 10px;
+            margin: 0 auto;
         }
 
         .service {
             background-color: #fff;
             border-radius: 5px;
-            margin: 20px;
-            padding: 50px;
+            margin-bottom: 20px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            display: flex;
-            align-items: center;
-            width: 1000px; /* Изменение ширины контейнера услуги для двух столбцов */
-            height: 160px;
-        }
-
-        .first-service {
-            margin-top: 250px;
+            width: calc(50% - 20px); /* Ширина контейнера, учитывая отступы */
+            padding: 20px;
+            margin: 0 10px; /* Отступ между контейнерами */
+            flex-basis: calc(50% - 20px); /* Устанавливаем базовый размер для контейнера */
+            flex-grow: 1; /* Разрешаем контейнеру увеличиваться в размере */
         }
 
         .grid-container {
@@ -68,20 +74,39 @@
         }
 
         .service-title {
+            font-family Arial, sans-serif;
+            font-size: 16px;
             font-weight: bold;
-            font-size: 18px;
-            margin-bottom: 5px;
         }
 
         .service-price {
             font-size: 16px;
             margin-bottom: 5px;
             align-self: flex-end;
+            text-decoration: underline;
         }
 
         .service-description {
             font-size: 14px;
             text-align: center;
+        }
+
+        /* Новые стили для выделенного контейнера */
+        .text-container {
+            max-width: 800px; /* Ширина контейнера текста */
+            margin: 10px; /* Внешний отступ контейнера */
+            padding: 20px; /* Внутренний отступ контейнера */
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .service {
+            margin-bottom: 20px; /* Добавляем отступ между блоками услуг */
+        }
+
+        .service-content {
+            overflow: hidden; /* Добавляем скрытие избыточного содержимого */
         }
     </style>
 </head>
@@ -98,11 +123,10 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a href="/" class="navbar-brand">Application name</a>
+                        <a href="/" class="navbar-brand">Детская школа анимации</a>
                     </div>
                     <div class="navbar-collapse collapse">
                         <ul class="nav navbar-nav">
-                            <li><a href="/home">Домашняя</a></li>
                             <li><a href="/about">Услуги</a></li>
                             <li><a href="/contact">Контакты</a></li>
                         </ul>
@@ -111,16 +135,16 @@
             </div>
         </div>
         
-        <div class="service-container first-service">
+        <div class="service-container">
             <div class="service">
                 <div class="service-content">
                     <div class="grid-container">
                         <img src="static/images/services/serv1.png" alt="Услуга 1" class="service-image">
                         <h3 class="service-title">Анимация в After Effects</h3>
                         <p class="service-price">Цена: 16000 руб</p>
-                        <p class="service-description">Образовательный курс по одной из самых известных анимационных программ 
-                        состоит из 8 видеоуроков и 8 вебинаров. На курсе вы узнаете, как из сценария сделать раскадровку, 
+                        <p class="service-description">На курсе Вы узнаете, как из сценария сделать раскадровку, 
                         а из раскадровки аниматик, и как делать анимацию и компоузинг в программе After Effects.</p>
+                        <p><a href="https://biganimationschool.ru/after2024" target="_blank">Подробнее</a></p>
                     </div>
                 </div>
             </div>
@@ -131,10 +155,9 @@
                         <img src="static/images/services/serv2.png" alt="Услуга 2" class="service-image">
                         <h3 class="service-title">Кукольная анимация</h3>
                         <p class="service-price">Цена: 10000 руб</p>
-                        <p class="service-description">Занятия проводятся в студии кукольной анимации. 
-                        За 1 год обучения слушатели курса получат профессию художника-мультипликатора, освоят технологию работы 
-                        с куклой от разработки персонажа до съемки мультфильма, снимут свой персональный проект и получат 
-                        диплом о профессиональной переподготовке.</p>
+                        <p class="service-description">На данном курсе Вы освоите старейшую анимационную технику, с которой началась история кинематографа, а конкретно
+                        работа с куклой, от разработки персонажа до съемки мультфильма.</p>
+                        <p><a href="https://biganimationschool.ru/puppetoffline" target="_blank">Подробнее</a></p>
                     </div>
                 </div>
             </div>
@@ -145,10 +168,9 @@
                         <img src="static/images/services/serv3.png" alt="Услуга 3" class="service-image">
                         <h3 class="service-title">Основы анимации. Procreate</h3>
                         <p class="service-price">Цена: 16000 руб</p>
-                        <p class="service-description">На курсе вы узнаете основные 12 принципов создания анимации, 
-                        познакомитесь с техниками рисованной анимацией, stop-motion и ротоскоп, основам для разработки персонажа 
-                        и художественного решения мультфильма, освоите интерфейс программы Procreate и получите начальные 
+                        <p class="service-description">Познакомитесь с техниками рисованной анимацией, освоите интерфейс программы Procreate и получите начальные 
                         навыки работы со звуком и монтажом.</p>
+                        <p><a href="https://biganimationschool.ru/procreate" target="_blank">Подробнее</a></p>
                     </div>
                 </div>
             </div>
@@ -158,12 +180,10 @@
                     <div class="grid-container">
                         <img src="static/images/services/serv4.png" alt="Услуга 4" class="service-image">
                         <h3 class="service-title">Живопись. Шедевры мастеров.</h3>
-                        <p class="service-price">Цена: 42000 руб</p>
-                        <p class="service-description">Наш курс по живописи «Шедевры старых мастеров» предлагает уникальную 
-                        возможность погрузиться в мир натюрморта и изучить техники создания копий живописи старых 
-                        мастеров. Получите профессиональное обучение под руководством опытных художников, 
-                        разберитесь в секретах композиции, светотени и цвета. Освоив этот курс, 
-                        вы сможете создавать удивительные картины, которые будут радовать вас и ваших близких.</p>
+                        <p class="service-price">Цена: 22000 руб</p>
+                        <p class="service-description">Получите профессиональное обучение под руководством опытных художников, 
+                        разберитесь в секретах композиции, светотени и цвета.</p>
+                        <p><a href="https://biganimationschool.ru/paintingoldmasters" target="_blank">Подробнее</a></p>
                     </div>
                 </div>
             </div>
