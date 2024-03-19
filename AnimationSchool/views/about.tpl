@@ -44,7 +44,7 @@
         }
 
         .first-service {
-            margin-top: 250px;
+            margin-top: 200px;
         }
 
         .grid-container {
