@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Контакты</title>
     <style>
+        /* Стили для основного контейнера */
         body {
             background-image: url('static/images/fon.jpg');
             background-color: #f0f0f0;
@@ -21,15 +22,17 @@
             align-items: center;
             height: 100vh;
         }
+        /* Стили для контента */
         .content {
             display: flex;
             align-items: center;
-            max-width: 1000px; /* ”величиваем максимальную ширину контейнера */
+            max-width: 1000px;
             margin: 0 auto;
             padding: 20px;
             background: rgba(255, 255, 255, 0.8);
             border-radius: 10px;
         }
+        /* Анимация появления контента */
         .text-info {
             flex: 1;
             padding: 30px;
@@ -48,10 +51,11 @@
                 transform: translateY(0);
             }
         }
+        /* Стили для текста */
         .text-info h2 {
             color: #333;
             font-size: 2em;
-            font-weight: bold; /* Жирный шрифт дл¤ заголовка */
+            font-weight: bold;
         }
         .text-info p {
             color: #666;
@@ -59,12 +63,13 @@
             margin-top: 10px;
         }
         .text-info p:last-child {
-            color: black; /* Черный цвет дл¤ последнего параграфа */
+            color: black;
         }
+        /* Стили для контейнера карты */
         .map-container {
             flex: 1;
-            height: 500px; /* ”величиваем высоту контейнера с картой */
-            width: 600px; /* ”величиваем ширину контейнера с картой */
+            height: 500px;
+            width: 600px;
             border: 1px solid #ccc;
             margin-left: 20px;
             border-radius: 10px;
