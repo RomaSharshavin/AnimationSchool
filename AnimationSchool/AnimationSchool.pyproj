@@ -18,7 +18,7 @@
     <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
     <Name>AnimationSchool</Name>
     <RootNamespace>AnimationSchool</RootNamespace>
-    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+    <InterpreterId>MSBuild|envroma|$(MSBuildProjectFullPath)</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -37,6 +37,7 @@
     <Folder Include="static\content\" />
     <Folder Include="static\fonts\" />
     <Folder Include="static\images\" />
+    <Folder Include="static\images\imageCarousel\" />
     <Folder Include="static\images\services\" />
     <Folder Include="static\scripts\" />
     <Folder Include="views\" />
@@ -51,6 +52,15 @@
     <Content Include="static\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="static\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="static\images\fon.jpg" />
+    <Content Include="static\images\imageCarousel\a.jpg" />
+    <Content Include="static\images\imageCarousel\b.jpg" />
+    <Content Include="static\images\imageCarousel\c.jpg" />
+    <Content Include="static\images\imageCarousel\d.jpg" />
+    <Content Include="static\images\imageCarousel\e.jpg" />
+    <Content Include="static\images\imageCarousel\f.jpg" />
+    <Content Include="static\images\imageCarousel\g.jpg" />
+    <Content Include="static\images\imageCarousel\h.jpg" />
+    <Content Include="static\images\imageCarousel\i.jpg" />
     <Content Include="static\images\services\serv1.png" />
     <Content Include="static\images\services\serv2.png" />
     <Content Include="static\images\services\serv3.png" />
