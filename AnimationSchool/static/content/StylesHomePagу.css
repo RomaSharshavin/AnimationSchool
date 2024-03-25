@@ -1,0 +1,72 @@
+.jumbotron {
+    animation: fadeInAnimation 2s;
+    position: relative;
+    z-index: 1;
+    margin-top: 300px;
+}
+
+.col-md-4 {
+    text-align: center;
+}
+
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.jumbotron {
+    animation: fadeIn 1s ease-out;
+}
+
+
+.gallery {
+    background: #EEE;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery-cell {
+    width: 30%;
+    height: 300px;
+    margin-right: 10px;
+    background: #8C8;
+    counter-increment: gallery-cell;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.gallery-cell img {
+    display: block;
+}
+
+.prev-btn,
+.next-btn {
+    position: absolute;
+    top: 90%;
+    transform: translateY(-150%);
+    background-color: transparent;
+    color: black;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}

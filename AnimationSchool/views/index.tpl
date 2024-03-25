@@ -5,7 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Детская школа анимации</title>
+    <link rel="stylesheet" href="static/content/StylesHomePagу.css">
     <style>
+            body {
+            background-image: url('static/images/fon.jpg');
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+
         @keyframes fadeIn {
             from {
                 opacity: 0;
@@ -22,14 +38,10 @@
     </style>
 </head>
 <body>
-
-<div class="jumbotron text-center" style="background-color: transparent;">
-    <h1 class="animateanimated animatefadeIn">Детская школа анимации</h1>
-    <p class="lead animateanimated animatefadeIn">Добро пожаловать на сайт детской школы анимации. Здесь вы найдете всю необходимую информацию о нашей школе и курсах.</p>
-</div>
-
-</body>
-</html>
+    <div class="jumbotron text-center" style="background-color: transparent;">
+        <h1 class="animateanimated animatefadeIn">Детская школа анимации</h1>
+        <p class="lead animateanimated animatefadeIn">Добро пожаловать на сайт детской школы анимации. Здесь вы найдете всю необходимую информацию о нашей школе и курсах.</p>
+    </div>
 
 <!-- Horizontal Carousel -->
 <div class="gallery">
@@ -58,107 +70,6 @@
 </div>
  
 
-
-<style>
-    body {
-        background-image: url('static/images/fon.jpg');
-        background-color: #f0f0f0;
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-    }
-
-    .jumbotron {
-        animation: fadeInAnimation 2s;
-        position: relative;
-        z-index: 1;
-        margin-top: 300px; 
-    }
-    .col-md-4 {
-    text-align: center;
-    }
-
-
-
-    @keyframes fadeInAnimation {
-        from {
-            opacity: 0;
-        }
-
-        to {
-            opacity: 1;
-        }
-    }
-
-    /* Gallery CSS */
-    * {
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-    }
-
-    .gallery {
-        background: #EEE;
-        display: flex;
-        align-items: center;
-        overflow: hidden;
-        position: relative;
-    }
-
-    .gallery-cell {
-        width: 30%;
-        height: 300px;
-        margin-right: 10px;
-        background: #8C8;
-        counter-increment: gallery-cell;
-        flex-shrink: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-    }
-
-    .gallery-cell img {
-        display: block;
-    }
-
-    /* cell number */
-    .gallery-cell:before {
-        display: block;
-        text-align: center;
-        content: counter(gallery-cell);
-        line-height: 200px;
-        font-size: 80px;
-        color: white;
-    }
-
-    .prev-btn,
-    .next-btn {
-        position: absolute;
-        top: 90%;
-        transform: translateY(-150%);
-        background-color:  transparent;
-        color: black;
-        padding: 5px 10px;
-        border: none;
-        cursor: pointer;
-        z-index: 5; 
-    }
-
-    .prev-btn {
-        left: 10px;
-    }
-
-    .next-btn {
-        right: 10px;
-    }
-</style>
-
 <script>
     document.addEventListener('DOMContentLoaded', function() {
     document.querySelector('.prev-btn').addEventListener('click', function() {
@@ -180,3 +91,6 @@
     });
 });
 </script>
+
+</body>
+</html>

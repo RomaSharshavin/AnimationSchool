@@ -5,6 +5,7 @@
     <meta http-equiv="Content-Language" content="ru">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Услуги</title>
+    <link rel="stylesheet" href="static/content/StyleServices.css">
     <style>
         body {
             /* Стиль для фона */
@@ -20,97 +21,7 @@
             align-items: center;
             height: 100vh;
         }
-        /*Стиль для шапки*/
-        .navbar {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 1000; /* Чтобы шапка была выше других элементов */
-        }
-
-        /*Стиль для контейнеров с услугами*/
-        .service-container {
-            display: flex;
-            flex-wrap: wrap;
-            width: 90%;
-            justify-content: space-around;
-            align-items: center;
-            margin-top: 120px; /* Увеличиваем отступ сверху для контейнеров с услугами */
-            padding: 10px;
-            margin: 0 auto;
-        }
-
-        /* Стили для каждой отдельной услуги */
-        .service {
-            background-color: #fff;
-            border-radius: 5px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            width: calc(50% - 20px); /* Ширина контейнера, учитывая отступы */
-            padding: 20px;
-            margin: 0 10px; /* Отступ между контейнерами */
-            flex-basis: calc(50% - 20px); /* Устанавливаем базовый размер для контейнера */
-            flex-grow: 1; /* Разрешаем контейнеру увеличиваться в размере */
-        }
-
-        /* Стили для внутреннего контейнера с содержимым услуги */
-        .grid-container {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-gap: 10px;
-        }
-
-        /* Стили для изображения услуги */
-        .service-image {
-            width: 100%;
-            max-width: 80px;
-            height: auto;
-            margin-right: 10px;
-        }
-
-        /* Стили для блока с содержимым услуги */
-        .service-content {
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
-        }
-
-        /* Стили для заголовка услуги */
-        .service-title {
-            font-family Arial, sans-serif;
-            font-size: 16px;
-            font-weight: bold;
-        }
-
-        /* Стили для цены услуги */
-        .service-price {
-            font-size: 16px;
-            margin-bottom: 5px;
-            align-self: flex-end;
-            text-decoration: underline;
-        }
-
-         /* Стили для описания услуги */
-        .service-description {
-            font-size: 14px;
-            text-align: center;
-        }
-
-        /* Добавляем отступ между блоками услуг */
-        .service {
-            margin-bottom: 20px; 
-        }
-
-        /* Добавляем скрытие избыточного содержимого */
-        .service-content {
-            overflow: hidden; 
-        }
-
-        /* Добавляем отступ сверху только для первых двух услуг */
-        .service:nth-child(1),
-        .service:nth-child(2) {
-            margin-top: 200px; 
-        }
+       
     </style>
 </head>
 
