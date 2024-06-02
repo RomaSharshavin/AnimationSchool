@@ -88,6 +88,7 @@
     <Content Include="static\scripts\_references.js" />
     <Content Include="views\about.tpl" />
     <Content Include="views\contact.tpl" />
+    <Content Include="views\forms.tpl" />
     <Content Include="views\index.tpl" />
     <Content Include="views\layout.tpl" />
     <Content Include="static\content\StylesHomePagу.css" />
