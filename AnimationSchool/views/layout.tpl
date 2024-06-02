@@ -24,6 +24,8 @@
                 <ul class="nav navbar-nav">
                     <li><a href="/about">Услуги</a></li>
                     <li><a href="/contact">Контакты</a></li>
+                    <li><a href="/contact">Обратная связь</a></li>
+                    <li><a href="/contact">Активные пользователи</a></li>
                 </ul>
             </div>
         </div>

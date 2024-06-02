@@ -87,6 +87,7 @@
     <Content Include="views\index.tpl" />
     <Content Include="views\layout.tpl" />
     <Content Include="static\content\StylesHomePagу.css" />
+    <Content Include="views\WebPage1.tpl" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env1\">
