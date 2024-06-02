@@ -1,4 +1,9 @@
-Name: margo
-Email: 123@mail.ru
-Message: thanks
+
+Имя: margo
+Почта: 123@mail.ru
+Сообщение: thanks
+------------------------------------
+Имя: qwerty
+Почта: qwerty1@gmail.com
+Сообщение: qwerty
 ------------------------------------
