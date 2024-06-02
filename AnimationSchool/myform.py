@@ -1,27 +1,36 @@
-from bottle import post, request, redirect
+from bottle import post, request
 import re
-def mail(email:str):
-    regex = re.compile(r'([A-Za-z0-9]+[.-_])*[A-Za-z0-9]+@[A-Za-z0-9-]+(\.[A-Z|a-z]{2,})+')
-    if re.fullmatch(regex, email):
-        return True
-    else:
-        return False   
+
+def is_english(text):
+    return bool(re.match('^[\\w !\"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~]*$', text))
+
+def mail(email):
+    regex = re.compile(r'([A-Za-z0-9]+[.-_])*[A-Za-z0-9]+@[A-Za-z0-9-]+(\.[A-Za-z]{2,})+')
+    return bool(re.fullmatch(regex, email))
+
 @post('/forms', method="post")
 def my_form():
-     data = request.forms.get("NAME")#получаем данные из формы 'им¤'
-     data11 = request.forms.get("EMAIL")#получаем данные из формы 'email'
-     data12 = request.forms.get("MESSAGE")#получаем данные из формы 'сообщение'
-     if not mail(data11):
-         return "Электронный адрес невалидный!"#проверка на корректность введЄнного адреса эл.почты
-     if(len(data)) <= 1:
-         return "Слишком короткое им¤!" #проверка на корректность введЄнной информации в поле 'им¤'
-     if(data12) == "":
-         return "Ошибка! Пустое сообщение!"#проверка на корректность введЄнного сообщени¤
-     file = open("newData.txt", "a")
-     file.write("Имя: " + data + "\n")
-     file.write("Почта: " + data11 + "\n")
-     file.write("Сообщение: " + data12 + "\n")
-     file.write("------------------------------------" + "\n")
-     file.close()
-     return "Отзыв отправлен! Спасибо!"#запись данных в файл
+    data = request.forms.get("NAME")
+    data11 = request.forms.get("EMAIL")
+    data12 = request.forms.get("MESSAGE")
 
+    if not mail(data11):
+        return "Некорректный ввод почты!"
+
+    if len(data) <= 1 or not is_english(data):
+        return "Некорректное имя! Пожалуйста введите на английском."
+
+    if not is_english(data12):
+        return "Некорректное сообщение! Пожалуйста введите на английском."
+
+    if data12 == "":
+        return "Ошибка! Сообщение пустое."
+
+    file = open("newData.txt", "a")
+    file.write("Имя: " + data + "\n")
+    file.write("Почта: " + data11 + "\n")
+    file.write("Сообщение: " + data12 + "\n")
+    file.write("------------------------------------" + "\n")
+    file.close()
+
+    return "Отзыв отправлен! Спасибо!"

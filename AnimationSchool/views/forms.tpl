@@ -1,4 +1,4 @@
-% rebase('layout.tpl', title=title, year=year, datausers=datausers)
+% rebase('layout.tpl',  title=title, year=year, datausers = datausers)
 
 <!-- обратная связь -->
 <h1></h1>

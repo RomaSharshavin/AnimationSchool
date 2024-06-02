@@ -1,7 +1,6 @@
-
 Имя: margo
 Почта: 123@mail.ru
-Сообщение: thanks
+Сообщение: hello! thank you so much
 ------------------------------------
 Имя: qwerty
 Почта: qwerty1@gmail.com

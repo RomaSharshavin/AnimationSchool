@@ -1,8 +1,4 @@
-% rebase('layout.tpl',datausers=datausers)
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+% rebase('layout.tpl',  title=title, year=year, datausers = datausers)
 
 <!-- —читывание данных из файла в заголовок -->
 <div class="rectanglefinal">
@@ -33,6 +29,7 @@
         left: 209px;
         top: 150px;
     }
+
     .fonts {
         font-family: 'Cambria', serif;
         font-style: normal;
