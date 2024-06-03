@@ -21,7 +21,12 @@ def my_form():
     message = request.forms.get("MESSAGE")
 
     if not name:
-        errors.append("Name is required!")
+        return """   
+            <script>
+                alert("Name is required!");
+                window.location.href = "/forms"; 
+            </script>
+            """
     if not last_name:
         errors.append("Last Name is required!")
     if not email:
