@@ -15,37 +15,42 @@ def is_valid_email(email):
 def my_form():
     errors = []
     name = request.forms.get("NAME")
+    last_name = request.forms.get("LAST_NAME")
     email = request.forms.get("EMAIL")
     phone = request.forms.get("PHONE")
     message = request.forms.get("MESSAGE")
 
     if not name:
         errors.append("Name is required!")
-    elif not re.match("^[A-Za-z ]+$", name):
-        errors.append("Name should contain only English alphabets and spaces!")
-    
+    if not last_name:
+        errors.append("Last Name is required!")
     if not email:
         errors.append("Email is required!")
     if not phone:
         errors.append("Phone is required!")
     if not message:
         errors.append("Message is required!")
-    elif not re.match("^[A-Za-z0-9 !?.,]+$", message):
-        errors.append("Message should contain only English alphabets, numbers, spaces, and common punctuation marks!")
 
-    if not is_valid_email(email) and email:
+    if not name.isalpha():
+        errors.append("Name cannot consist of only digits!")
+        
+    if not last_name.isalpha():
+        errors.append("Last name cannot consist of only digits!")
+
+    if email and not is_valid_email(email):
         errors.append("Invalid email format!")
-    if not is_valid_phone(phone) and phone:
+    if phone and not is_valid_phone(phone):
         errors.append("Invalid phone number format!")
 
     if errors:
         response.content_type = 'text/plain'
         return '\n'.join(errors)
     else:
-        with open("newData.txt", "+a", encoding="utf-16") as file:
+        with open("newData.txt", "a", encoding="utf-8") as file:
             file.write("Name: " + name + "\n")
+            file.write("Last Name: " + last_name + "\n")
             file.write("Email: " + email + "\n")
             file.write("Phone: " + phone + "\n")
-            file.write("About myself: " + message + "\n")
+            file.write("About Myself: " + message + "\n")
             file.write("------------------------------------\n")
         return "Thanks!"

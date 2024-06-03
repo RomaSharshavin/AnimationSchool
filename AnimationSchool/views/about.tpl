@@ -1,15 +1,16 @@
+% rebase('layout.tpl', title=title, year=year)
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Content-Language" content="ru">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services</title>
     <link rel="stylesheet" href="static/content/StyleServices.css">
     <style>
         body {
-            /* Style for background */
-            background-image: url('static/images/background.jpg');
+            /* Background style */
+            background-image: url('static/images/fon.jpg');
             background-color: #f0f0f0;
             font-family: Arial, sans-serif;
             margin: 0;
@@ -20,7 +21,7 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-        }    
+        }
     </style>
 </head>
 
@@ -41,23 +42,23 @@
                     <div class="navbar-collapse collapse">
                         <ul class="nav navbar-nav">
                             <li><a href="/about">Services</a></li>
-                            <li><a href="/contact">Contact</a></li>
+                            <li><a href="/contact">Contacts</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
-
+        
         <div class="service-container">
             <div class="service">
                 <div class="service-content">
                     <div class="grid-container">
                         <img src="static/images/services/serv1.png" alt="Service 1" class="service-image">
                         <h3 class="service-title">Animation in After Effects</h3>
-                        <p class="service-price">Price: 16000 RUB</p>
-                        <p class="service-description">In this course, you will learn how to create storyboards from scripts, 
-                        how to create animatics from storyboards, and how to animate and composite in After Effects.</p>
-                        <p><a href="https://biganimationschool.ru/after2024" target="_blank">Learn More</a></p>
+                        <p class="service-price">Price: 16000 rub</p>
+                        <p class="service-description">On the course, you will learn how to turn a script into a storyboard, and a storyboard into an animatic, 
+                        as well as how to do animation and compositing in After Effects.</p>
+                        <p><a href="https://biganimationschool.ru/after2024" target="_blank">Learn more</a></p>
                     </div>
                 </div>
             </div>
@@ -67,10 +68,10 @@
                     <div class="grid-container">
                         <img src="static/images/services/serv2.png" alt="Service 2" class="service-image">
                         <h3 class="service-title">Puppet Animation</h3>
-                        <p class="service-price">Price: 10000 RUB</p>
-                        <p class="service-description">In this course, you will master one of the oldest animation techniques, 
-                        puppetry, covering everything from character development to filming a stop-motion film.</p>
-                        <p><a href="https://biganimationschool.ru/puppetoffline" target="_blank">Learn More</a></p>
+                        <p class="service-price">Price: 10000 rub</p>
+                        <p class="service-description">On this course, you will master the oldest animation technique, which marks the beginning of the history of cinema, 
+                        namely working with puppets, from character development to shooting a cartoon.</p>
+                        <p><a href="https://biganimationschool.ru/puppetoffline" target="_blank">Learn more</a></p>
                     </div>
                 </div>
             </div>
@@ -80,10 +81,10 @@
                     <div class="grid-container">
                         <img src="static/images/services/serv3.png" alt="Service 3" class="service-image">
                         <h3 class="service-title">Animation Basics. Procreate</h3>
-                        <p class="service-price">Price: 16000 RUB</p>
-                        <p class="service-description">Explore techniques of hand-drawn animation, master the Procreate software interface, 
-                        and gain basic skills in sound and editing.</p>
-                        <p><a href="https://biganimationschool.ru/procreate" target="_blank">Learn More</a></p>
+                        <p class="service-price">Price: 16000 rub</p>
+                        <p class="service-description">You will learn the techniques of drawn animation, master the interface of the Procreate program, and gain initial skills 
+                        in working with sound and editing.</p>
+                        <p><a href="https://biganimationschool.ru/procreate" target="_blank">Learn more</a></p>
                     </div>
                 </div>
             </div>
@@ -93,10 +94,10 @@
                     <div class="grid-container">
                         <img src="static/images/services/serv4.png" alt="Service 4" class="service-image">
                         <h3 class="service-title">Painting. Masterpieces of Masters.</h3>
-                        <p class="service-price">Price: 22000 RUB</p>
-                        <p class="service-description">Receive professional training under the guidance of experienced artists, 
-                        delve into the secrets of composition, light and shadow, and color.</p>
-                        <p><a href="https://biganimationschool.ru/paintingoldmasters" target="_blank">Learn More</a></p>
+                        <p class="service-price">Price: 22000 rub</p>
+                        <p class="service-description">Receive professional education under the guidance of experienced artists, 
+                        understand the secrets of composition, light and shade, and color.</p>
+                        <p><a href="https://biganimationschool.ru/paintingoldmasters" target="_blank">Learn more</a></p>
                     </div>
                 </div>
             </div>

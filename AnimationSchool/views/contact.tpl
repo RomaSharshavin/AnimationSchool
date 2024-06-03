@@ -1,7 +1,7 @@
 % rebase('layout.tpl', title=title, year=year)
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +11,7 @@
     <style>
         /* Styles for the main container */
         body {
-            background-image: url('static/images/background.jpg');
+            background-image: url('static/images/fon.jpg');
             background-color: #f0f0f0;
             font-family: Arial, sans-serif;
             margin: 0;
@@ -31,12 +31,12 @@
             <h2>CONTACTS</h2>
             <p>+7 (911) 123-45-67</p>
             <p><a href="mailto:animationschool@yandex.ru">animationschool@yandex.ru</a></p>
-            <p>St. Petersburg, Ligovsky Ave. 56A, office 502</p>
-            <p>Call, write, or come over, we are always happy to make new acquaintances!</p>
+            <p>Saint Petersburg, Ligovsky pr. 56A, office 502</p>
+            <p>Call, write, or come over, we are always happy to meet new people!</p>
         </div>
         <div class="map-container">
             <iframe src="https://maps.google.com/maps?q=59.923861,30.360167&z=15&output=embed"
-                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>        
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>        
         </div>
     </div>
 </body>
