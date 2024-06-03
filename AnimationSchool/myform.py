@@ -14,48 +14,39 @@ def is_valid_email(email):
 @post('/forms', method="post")
 def my_form():
     errors = []
-    name = request.forms.get("NAME")
-    last_name = request.forms.get("LAST_NAME")
-    email = request.forms.get("EMAIL")
-    phone = request.forms.get("PHONE")
-    message = request.forms.get("MESSAGE")
+    fields = {
+        "Name": request.forms.get("NAME"),
+        "Last Name": request.forms.get("LAST_NAME"),
+        "Email": request.forms.get("EMAIL"),
+        "Phone": request.forms.get("PHONE"),
+        "Message": request.forms.get("MESSAGE")
+    }
 
-    if not name:
-        return """   
+    # Check for missing or invalid input fields
+    for field, value in fields.items():
+        if not value:
+            errors.append(f"{field} is required!")
+        elif field == "Name" and not value.isalpha():
+            errors.append(f"{field} cannot consist of only digits!")
+        elif field == "Last Name" and not value.isalpha():
+            errors.append(f"{field} cannot consist of only digits!")
+        elif field == "Email" and not is_valid_email(value):
+            errors.append("Invalid email format!")
+        elif field == "Phone" and not is_valid_phone(value):
+            errors.append("Invalid phone number format!")
+
+    if errors:
+        return f"""   
             <script>
-                alert("Name is required!");
+                alert("{errors[0]}");
                 window.location.href = "/forms"; 
             </script>
             """
-    if not last_name:
-        errors.append("Last Name is required!")
-    if not email:
-        errors.append("Email is required!")
-    if not phone:
-        errors.append("Phone is required!")
-    if not message:
-        errors.append("Message is required!")
 
-    if not name.isalpha():
-        errors.append("Name cannot consist of only digits!")
-        
-    if not last_name.isalpha():
-        errors.append("Last name cannot consist of only digits!")
+    # Save valid form data to a file
+    with open("newData.txt", "a", encoding="utf-8") as file:
+        for field, value in fields.items():
+            file.write(f"{field}: {value}\n")
+        file.write("------------------------------------\n")
 
-    if email and not is_valid_email(email):
-        errors.append("Invalid email format!")
-    if phone and not is_valid_phone(phone):
-        errors.append("Invalid phone number format!")
-
-    if errors:
-        response.content_type = 'text/plain'
-        return '\n'.join(errors)
-    else:
-        with open("newData.txt", "a", encoding="utf-8") as file:
-            file.write("Name: " + name + "\n")
-            file.write("Last Name: " + last_name + "\n")
-            file.write("Email: " + email + "\n")
-            file.write("Phone: " + phone + "\n")
-            file.write("About Myself: " + message + "\n")
-            file.write("------------------------------------\n")
-        return "Thanks!"
+    return "Thanks!"
