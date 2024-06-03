@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="Content-Language" content="ru">
+    <meta http-equiv="Content-Language" content="en">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Услуги</title>
+    <title>Services</title>
     <link rel="stylesheet" href="static/content/StyleServices.css">
     <style>
         body {
-            /* Стиль для фона */
-            background-image: url('static/images/fon.jpg');
+            /* Style for background */
+            background-image: url('static/images/background.jpg');
             background-color: #f0f0f0;
             font-family: Arial, sans-serif;
             margin: 0;
@@ -20,8 +20,7 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-        }
-       
+        }    
     </style>
 </head>
 
@@ -37,28 +36,28 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a href="/" class="navbar-brand">Детская школа анимации</a>
+                        <a href="/" class="navbar-brand">Children's Animation School</a>
                     </div>
                     <div class="navbar-collapse collapse">
                         <ul class="nav navbar-nav">
-                            <li><a href="/about">Услуги</a></li>
-                            <li><a href="/contact">Контакты</a></li>
+                            <li><a href="/about">Services</a></li>
+                            <li><a href="/contact">Contact</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
-        
+
         <div class="service-container">
             <div class="service">
                 <div class="service-content">
                     <div class="grid-container">
-                        <img src="static/images/services/serv1.png" alt="Услуга 1" class="service-image">
-                        <h3 class="service-title">Анимация в After Effects</h3>
-                        <p class="service-price">Цена: 16000 руб</p>
-                        <p class="service-description">На курсе Вы узнаете, как из сценария сделать раскадровку, 
-                        а из раскадровки аниматик, и как делать анимацию и компоузинг в программе After Effects.</p>
-                        <p><a href="https://biganimationschool.ru/after2024" target="_blank">Подробнее</a></p>
+                        <img src="static/images/services/serv1.png" alt="Service 1" class="service-image">
+                        <h3 class="service-title">Animation in After Effects</h3>
+                        <p class="service-price">Price: 16000 RUB</p>
+                        <p class="service-description">In this course, you will learn how to create storyboards from scripts, 
+                        how to create animatics from storyboards, and how to animate and composite in After Effects.</p>
+                        <p><a href="https://biganimationschool.ru/after2024" target="_blank">Learn More</a></p>
                     </div>
                 </div>
             </div>
@@ -66,12 +65,12 @@
             <div class="service">
                 <div class="service-content">
                     <div class="grid-container">
-                        <img src="static/images/services/serv2.png" alt="Услуга 2" class="service-image">
-                        <h3 class="service-title">Кукольная анимация</h3>
-                        <p class="service-price">Цена: 10000 руб</p>
-                        <p class="service-description">На данном курсе Вы освоите старейшую анимационную технику, с которой началась история кинематографа, а конкретно
-                        работа с куклой, от разработки персонажа до съемки мультфильма.</p>
-                        <p><a href="https://biganimationschool.ru/puppetoffline" target="_blank">Подробнее</a></p>
+                        <img src="static/images/services/serv2.png" alt="Service 2" class="service-image">
+                        <h3 class="service-title">Puppet Animation</h3>
+                        <p class="service-price">Price: 10000 RUB</p>
+                        <p class="service-description">In this course, you will master one of the oldest animation techniques, 
+                        puppetry, covering everything from character development to filming a stop-motion film.</p>
+                        <p><a href="https://biganimationschool.ru/puppetoffline" target="_blank">Learn More</a></p>
                     </div>
                 </div>
             </div>
@@ -79,12 +78,12 @@
             <div class="service">
                 <div class="service-content">
                     <div class="grid-container">
-                        <img src="static/images/services/serv3.png" alt="Услуга 3" class="service-image">
-                        <h3 class="service-title">Основы анимации. Procreate</h3>
-                        <p class="service-price">Цена: 16000 руб</p>
-                        <p class="service-description">Познакомитесь с техниками рисованной анимацией, освоите интерфейс программы Procreate и получите начальные 
-                        навыки работы со звуком и монтажом.</p>
-                        <p><a href="https://biganimationschool.ru/procreate" target="_blank">Подробнее</a></p>
+                        <img src="static/images/services/serv3.png" alt="Service 3" class="service-image">
+                        <h3 class="service-title">Animation Basics. Procreate</h3>
+                        <p class="service-price">Price: 16000 RUB</p>
+                        <p class="service-description">Explore techniques of hand-drawn animation, master the Procreate software interface, 
+                        and gain basic skills in sound and editing.</p>
+                        <p><a href="https://biganimationschool.ru/procreate" target="_blank">Learn More</a></p>
                     </div>
                 </div>
             </div>
@@ -92,12 +91,12 @@
             <div class="service">
                 <div class="service-content">
                     <div class="grid-container">
-                        <img src="static/images/services/serv4.png" alt="Услуга 4" class="service-image">
-                        <h3 class="service-title">Живопись. Шедевры мастеров.</h3>
-                        <p class="service-price">Цена: 22000 руб</p>
-                        <p class="service-description">Получите профессиональное обучение под руководством опытных художников, 
-                        разберитесь в секретах композиции, светотени и цвета.</p>
-                        <p><a href="https://biganimationschool.ru/paintingoldmasters" target="_blank">Подробнее</a></p>
+                        <img src="static/images/services/serv4.png" alt="Service 4" class="service-image">
+                        <h3 class="service-title">Painting. Masterpieces of Masters.</h3>
+                        <p class="service-price">Price: 22000 RUB</p>
+                        <p class="service-description">Receive professional training under the guidance of experienced artists, 
+                        delve into the secrets of composition, light and shadow, and color.</p>
+                        <p><a href="https://biganimationschool.ru/paintingoldmasters" target="_blank">Learn More</a></p>
                     </div>
                 </div>
             </div>
@@ -105,4 +104,3 @@
     </div>
 </body>
 </html>
-

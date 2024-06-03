@@ -1,36 +1,51 @@
-from bottle import post, request
+from bottle import post, request, response
 import re
 
-def is_english(text):
-    return bool(re.match('^[\\w !\"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~]*$', text))
+def is_valid_phone(phone):
+    # Phone number format check
+    phone_regex = r'^\+?\d{1,2}?[-\s]?\(?\d{3}\)?[-\s]?\d{3}[-\s]?\d{4}$'
+    return bool(re.match(phone_regex, phone))
 
-def mail(email):
-    regex = re.compile(r'([A-Za-z0-9]+[.-_])*[A-Za-z0-9]+@[A-Za-z0-9-]+(\.[A-Za-z]{2,})+')
-    return bool(re.fullmatch(regex, email))
+def is_valid_email(email):
+    # Email format check
+    email_regex = r'([A-Za-z0-9]+[.-_])*[A-Za-z0-9]+@[A-Za-z0-9-]+(\.[A-Za-z]{2,})+'
+    return bool(re.fullmatch(email_regex, email))
 
 @post('/forms', method="post")
 def my_form():
-    data = request.forms.get("NAME")
-    data11 = request.forms.get("EMAIL")
-    data12 = request.forms.get("MESSAGE")
+    errors = []
+    name = request.forms.get("NAME")
+    email = request.forms.get("EMAIL")
+    phone = request.forms.get("PHONE")
+    message = request.forms.get("MESSAGE")
 
-    if not mail(data11):
-        return "Некорректный ввод почты!"
+    if not name:
+        errors.append("Name is required!")
+    elif not re.match("^[A-Za-z ]+$", name):
+        errors.append("Name should contain only English alphabets and spaces!")
+    
+    if not email:
+        errors.append("Email is required!")
+    if not phone:
+        errors.append("Phone is required!")
+    if not message:
+        errors.append("Message is required!")
+    elif not re.match("^[A-Za-z0-9 !?.,]+$", message):
+        errors.append("Message should contain only English alphabets, numbers, spaces, and common punctuation marks!")
 
-    if len(data) <= 1 or not is_english(data):
-        return "Некорректное имя! Пожалуйста введите на английском."
+    if not is_valid_email(email) and email:
+        errors.append("Invalid email format!")
+    if not is_valid_phone(phone) and phone:
+        errors.append("Invalid phone number format!")
 
-    if not is_english(data12):
-        return "Некорректное сообщение! Пожалуйста введите на английском."
-
-    if data12 == "":
-        return "Ошибка! Сообщение пустое."
-
-    file = open("newData.txt", "a")
-    file.write("Имя: " + data + "\n")
-    file.write("Почта: " + data11 + "\n")
-    file.write("Сообщение: " + data12 + "\n")
-    file.write("------------------------------------" + "\n")
-    file.close()
-
-    return "Отзыв отправлен! Спасибо!"
+    if errors:
+        response.content_type = 'text/plain'
+        return '\n'.join(errors)
+    else:
+        with open("newData.txt", "+a", encoding="utf-16") as file:
+            file.write("Name: " + name + "\n")
+            file.write("Email: " + email + "\n")
+            file.write("Phone: " + phone + "\n")
+            file.write("About myself: " + message + "\n")
+            file.write("------------------------------------\n")
+        return "Thanks!"

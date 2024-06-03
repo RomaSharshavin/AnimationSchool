@@ -1,17 +1,17 @@
 % rebase('layout.tpl', title=title, year=year)
 
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="static/content/StyleContact.css">
-    <title>Контакты</title>
+    <title>Contact</title>
     <style>
-        /* Стили для основного контейнера */
+        /* Styles for the main container */
         body {
-            background-image: url('static/images/fon.jpg');
+            background-image: url('static/images/background.jpg');
             background-color: #f0f0f0;
             font-family: Arial, sans-serif;
             margin: 0;
@@ -28,17 +28,16 @@
 <body>
     <div class="content">
         <div class="text-info">
-            <h2>КОНТАКТЫ</h2>
+            <h2>CONTACTS</h2>
             <p>+7 (911) 123-45-67</p>
             <p><a href="mailto:animationschool@yandex.ru">animationschool@yandex.ru</a></p>
-            <p>Санкт-Петербург, Лиговский пр. 56А, офис 502</p>
-            <p>Звоните, пишите или приезжайте, мы всегда рады новым знакомствам!</p>
+            <p>St. Petersburg, Ligovsky Ave. 56A, office 502</p>
+            <p>Call, write, or come over, we are always happy to make new acquaintances!</p>
         </div>
         <div class="map-container">
             <iframe src="https://maps.google.com/maps?q=59.923861,30.360167&z=15&output=embed"
-            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>        
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>        
         </div>
     </div>
 </body>
 </html>
-

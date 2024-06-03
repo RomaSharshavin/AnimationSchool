@@ -18,14 +18,14 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="/" class="navbar-brand">Детская школа анимации</a>
+                <a href="/" class="navbar-brand">Children's Animation School</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="/about">Услуги</a></li>
-                    <li><a href="/contact">Контакты</a></li>
-                    <li><a href="/forms">Обратная связь</a></li>
-                    <li><a href="/formsdata">Активные пользователи</a></li>
+                    <li><a href="/about">Services</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="/forms">Feedback</a></li>
+                    <li><a href="/formsdata">Active Users</a></li>
                 </ul>
             </div>
         </div>
@@ -44,4 +44,3 @@
     <script src="/static/scripts/respond.js"></script>
 </body>
 </html>
-

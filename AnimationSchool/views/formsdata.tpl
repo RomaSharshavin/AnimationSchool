@@ -1,41 +1,32 @@
 % rebase('layout.tpl',  title=title, year=year, datausers = datausers)
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+<!--РЎС‡РёС‚С‹РІР°РЅРёРµ РґР°РЅРЅС‹С… РёР· С„Р°Р№Р»Р° РІ Р·Р°РіРѕР»РѕРІРѕРє -->
 
-<!-- Считывание данных из файла в заголовок -->
-<div class="rectanglefinal">
-    % for i in datausers:
-        <h4 class="fonts">{{ i }}</h4>
-    % end
+<div class = "rectanglefinal">
+%for i in datausers:
+    <h4 class ="fonts"> {{i}} </h4>
+%end
+
 </div>
-
 <style>
-    body {
-        /* Стиль для фона */
-        background-image: url('static/images/fon.jpg');
-        background-color: #f0f0f0;
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-    }
-    .rectanglefinal {
-        position: absolute;
-        width: 875px;
-        height: 100%;
-        left: 209px;
-        top: 150px;
-    }
 
-    .fonts {
-        font-family: 'Cambria', serif;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 25px;
-        line-height: 55px;
-        color: #000000;
-    }
+.rectanglefinal{
+    position: absolute;
+    width: 875px;
+    height: 100%;
+    left: 209px;
+    top: 150px;    
+}
+.fonts{
+    font-family: 'Pacifico';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 56px;
+    color: #0000000;
+}
+
+
 </style>
