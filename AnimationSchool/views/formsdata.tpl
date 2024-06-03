@@ -2,13 +2,14 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"> 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
 <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
-<!--Считывание данных из файла в заголовок -->
 
+<!--Считывание данных из файла в заголовок -->
 <div class = "rectanglefinal">
 %for i in datausers:
     <h4 class ="fonts"> {{i}} </h4>
 %end
 
+<!--Стилизация для вывода текста из файла -->
 </div>
 <style>
 .fonts{
