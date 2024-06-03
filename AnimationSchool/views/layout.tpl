@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+<!--Реализация шапки -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }}</title>
+    <title>Children's Animation School</title>
     <link rel="stylesheet" type="text/css" href="/static/content/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="/static/content/site.css" />
     <script src="/static/scripts/modernizr-2.6.2.js"></script>
+    <title>Home</title>
 </head>
 
 <body>
