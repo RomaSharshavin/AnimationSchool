@@ -4,3 +4,21 @@ Email: 123@mail.ru
 Phone: +79312663766
 Message: qwaszx
 ------------------------------------
+Name: qwerty
+Last Name: zxcvb
+Email: qwerty1@gmail.com
+Phone: 123-456-7890
+Message: qweasdzxc
+------------------------------------
+Name: margo
+Last Name: lilu
+Email: m.m@mail.ru
+Phone: +7 123 456 7890
+Message: qwertyuiop
+------------------------------------
+Name: nikola
+Last Name: tesla
+Email: asd@gmail.com
+Phone: +7 123 456 7890
+Message: Very cool!1!!
+------------------------------------

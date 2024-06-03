@@ -11,14 +11,6 @@
 
 </div>
 <style>
-
-.rectanglefinal{
-    position: absolute;
-    width: 875px;
-    height: 100%;
-    left: 209px;
-    top: 150px;    
-}
 .fonts{
     font-family: 'Pacifico';
     font-style: normal;
@@ -27,6 +19,4 @@
     line-height: 56px;
     color: #0000000;
 }
-
-
 </style>
