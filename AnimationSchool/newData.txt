@@ -1,14 +1,14 @@
 Name: nikola
 Last Name: tesla
 Email: m.m@mail.ru
-Phone: (123) 456-7890
-Message: qwertyu
+Phone: +7 123 456 7890
+Message: qwertyuiop[]
 ------------------------------------
 Name: margo
 Last Name: lilu
-Email: asd@gmail.com
-Phone: +7 123 456 7890
-Message: sdfghjk
+Email: lilu.m@mail.ru
+Phone: (123) 456-7890
+Message: asdfqwer
 ------------------------------------
 Name: nastya
 Last Name: makarova
