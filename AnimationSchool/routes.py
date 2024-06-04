@@ -39,10 +39,6 @@ def about():
 @view('forms')
 def forms():
     """Renders the about page."""
-
-
-
-    
     with open('newData.txt', 'r') as f:
         nums = f.read().splitlines()
    
