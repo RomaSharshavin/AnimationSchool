@@ -41,6 +41,7 @@
     <Compile Include="test_phone.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="views\form_review.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="static\" />
