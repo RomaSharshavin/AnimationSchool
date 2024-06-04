@@ -27,7 +27,7 @@
                     <li><a href="/about">Services</a></li>
                     <li><a href="/contact">Contact</a></li>
                     <li><a href="/forms">Articles</a></li>
-                    <li><a href="/forms">Reviews</a></li>
+                    <li><a href="/reviews">Reviews</a></li>
                     <li><a href="/forms">My Profile</a></li>
                     <li><a href="/formsdata">Active Users</a></li>
                 </ul>

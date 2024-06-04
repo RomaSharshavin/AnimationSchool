@@ -51,6 +51,22 @@ def forms():
         datausers = nums
     )
 
+@route('/reviews')
+@view('reviews')
+def forms():
+    """Renders the about page."""
+    with open('newData.txt', 'r') as f:
+        nums = f.read().splitlines()
+   
+    print(nums)
+    
+    return dict(
+        title='About',
+        message='Your application description page.',
+        year=datetime.now().year,
+        datausers = nums
+    )
+
 @route('/formsdata')
 @view('formsdata')
 def formsdata():
